@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+
+{% block title %}jaipur{% endblock title %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <header>
+    <div class="logo">
+      <h1>Rajasthan Travel Guide</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid ">
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/static/a.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/b.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/c.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/d.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/e.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/f.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+        <h3>Top Attractions</h3>
+        <ul>
+          <li>Hawa Mahal</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <li>City Palace</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <li>Amer Fort</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+            </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <li>Jantar Mantar</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+            </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <li>Jaigarh Fort</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+           </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </ul>
+
+  <div class="container mb-3 py-4">
+    <h1 class="logo">Bookings</h1>
+    <form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" name="date">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">No. of People</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+      </div>
+        <br><button type="Submit" class="btn btn-dark">Book Now</button><br> 
+    </form>
+</div>
+ 
+</body>
+</html>
+
+{% endblock body %}

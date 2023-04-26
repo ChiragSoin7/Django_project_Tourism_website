@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+</head>
+<body>
+
+
+
+     
+
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="enter the city" name="city" />
+        <button type="submit">Enter</button>
+    </form>
+    <h1>{{ city }} Weather</h1>
+    {% comment %} <p>Temperature: {{ temperature }} &deg;C</p> {% endcomment %}
+    <p>Weather: {{ description }}</p>
+    <p>day: {{ day }}</p>
+    <p>city: {{city }}</p>
+    {% comment %} <p>Humidity: {{ humidity }}%</p>
+    <p>Wind Speed: {{ wind_speed }} km/h</p> {% endcomment %}
+    <img src="https://api.openweathermap.org/img/w/{{icon}}.png" width="100px" />
+</body>
+</html>

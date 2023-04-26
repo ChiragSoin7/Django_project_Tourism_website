@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+
+{% block title %}jaipur{% endblock title %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <header>
+    <div class="logo">
+      <h1>Rajasthan Travel Guide</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid ">
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/static/haveli.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/jaisalmerfort.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/lake.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/sand.jfif" class="d-block w-100 px-0" alt="...">
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+        <h3>Top Attractions</h3>
+        <ul>
+          <li>Jaisalmer Fort</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Jaisalmer is a beautiful and historical city located in the Thar Desert of Rajasthan, India.
+                The city is known for its stunning sandstone architecture and picturesque desert landscapes.
+                One of the most famous places to visit in Jaisalmer is the Jaisalmer Fort, also known as the Golden Fort or Sonar Qila. 
+               This massive fort was built with yellow sandstone and houses several temples, palaces, and havelis, making it a must-visit destination for tourists.
+                Another famous attraction is the Patwon ki Haveli, a beautiful haveli with intricate stone carvings and stunning architecture. 
+               It is one of the most famous havelis in Jaisalmer and offers a glimpse into the city's rich history and culture.
+               
+            </div>
+          </div>
+          <li>City Palace</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Gadisar Lake is another popular destination in Jaisalmer. 
+                It is a beautiful artificial lake surrounded by temples, ghats, and chattris. 
+                It is a popular spot for boating and picnics, and visitors can enjoy the serene beauty of the lake while enjoying a peaceful afternoon.
+                 For those looking for adventure, the Sam Sand Dunes offer an unforgettable desert experience.
+                 Located about 40 km from Jaisalmer, the dunes are a popular spot for camel safaris, desert camping, and dune bashing. 
+                Jain Temples are also a must-visit destination in Jaisalmer, with intricate carvings and stunning architecture that showcase the city's rich heritage. 
+                With its stunning architecture, breathtaking desert landscapes, and rich history and culture, Jaisalmer is a destination that should be on every traveler's bucket list.
+                
+            </div>
+          </div>
+          <li>Patwon ki Haveli</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+            </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Patwon ki Haveli is a beautiful and historical haveli located in the heart of Jaisalmer city in Rajasthan, India. It was built by a wealthy merchant named Guman Chand Patwa in the early 19th century for his five sons. The haveli is known for its intricate stone carvings, beautiful architecture, and stunning design. It is made up of five separate buildings, each of which has its own unique character and charm. The haveli is constructed with yellow sandstone, which glows in the sunlight, giving it the nickname "mansion of yellow stone."
+                The haveli features several beautiful courtyards and balconies, and visitors can explore its many rooms and corridors to get a glimpse into the life of the Patwa family. Each of the five havelis is adorned with intricate carvings and beautiful paintings, showcasing the skill and craftsmanship of the local artisans. One of the highlights of the haveli is the stunning mural depicting the life and times of the Patwa family, which adorns one of the walls.                
+            </div>
+          </div>
+          <li>Sam Sand Dunes</li>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              About it
+            </a>
+            </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Sam Sand Dunes is a stunning natural wonder located about 40 km from the city of Jaisalmer in Rajasthan, India. The sand dunes are a popular destination for tourists, offering a unique and unforgettable desert experience. Visitors can enjoy a variety of activities, including camel safaris, dune bashing, and desert camping.
+                One of the most popular activities in Sam Sand Dunes is a camel safari, where visitors can ride on a camel's back and explore the vast expanse of the desert. It is an ideal way to experience the beauty of the dunes and get a glimpse of the local culture and lifestyle. Another popular activity is dune bashing, where visitors can ride in a 4x4 vehicle and drive through the sand dunes at high speeds. It is an exhilarating experience that is sure to get the adrenaline pumping.
+                
+            </div>
+          </div>
+        </ul>
+
+  <div class="container mb-3 py-4">
+    <h1 class="logo">Bookings</h1>
+    <form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" name="date">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">No. of People</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+      </div>
+        <br><button type="Submit" class="btn btn-dark">Book Now</button><br> 
+    </form>
+</div>
+ 
+</body>
+</html>
+
+{% endblock body %}

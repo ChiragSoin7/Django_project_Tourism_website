@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid ">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/a.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/b.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/c.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/d.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/e.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/f.jfif" class="d-block w-100 px-0" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<div class="container">
+<h1 class="text-center">Different Cities in Rajasthan</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/jaipur3.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>JAIPUR</h>
+            <p class="card-text">Jaipur is a vibrant and colorful city located in the northern Indian state of Rajasthan. It is also known as the "Pink City" due to the distinct pink color of many of its buildings. Jaipur is famous for its rich history, stunning palaces, and forts, including the iconic Hawa Mahal and Amber Fort. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/jaipur">View</a>
+              </div>
+              <small class="text-muted">9 min ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/udaypur.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>UDAIPUR</h>
+            <p class="card-text">Udaipur is a beautiful city in the Indian state of Rajasthan.Also known as the "City of Lakes," it is famous for its stunning palaces, lakes, and scenic landscapes.Udaipur is a popular tourist destination and attracts visitors from all over the world.
+                The city also has a rich cultural heritage.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/udaipur">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/JAISALMER.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>JAISAlMER</h>
+            <p class="card-text">Jaisalmer is a city located in the western Indian state of Rajasthan, known as the "Golden City" due to the golden-yellow sandstone used in its buildings. It is home to the stunning Jaisalmer Fort, a UNESCO World Heritage site, and many other architectural wonders, such as havelis and temples.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/jaisal">View</a>  
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/bikan.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>BIKANER</h>
+            <p class="card-text">
+                Bikaner is a city in the northwestern state of Rajasthan, India. The city is known for its magnificent forts, palaces, and temples, which showcase the region's rich cultural heritage. The Junagarh Fort, Lalgarh Palace, and Karni Mata Temple are some of the popular tourist attractions in Bikaner.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/bikaner">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/jodhpur.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>JODHPUR</h>
+            <p class="card-text">Jodhpur is a city located in the western Indian state of Rajasthan, famously known as the "Blue City" due to the blue-colored houses in its old town. It is home to the majestic Mehrangarh Fort, one of the largest forts in India, which offers stunning panoramic views of the city. we love jodhpur.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/jodh">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/KOTA.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>KOTA</h>
+            <p class="card-text">Kota is a city located in the state of Rajasthan, India. It is situated on the banks of the Chambal River and is known for its rich history and cultural heritage.The city is also home to several historical sites, including the Kota Fort and the Jag Mandir Palace, which attract a large number of tourists. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/kota">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/pali.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>PALI</h>
+            <p class="card-text">Pali city is a bustling urban center located in the Marwar region of Rajasthan, India. It is the headquarters of the Pali district and is an important commercial hub for the surrounding area. The city has a rich history dating back to the 11th century and is home to several ancient temples and monuments.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/pai">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/Ajmer.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>Bharatpur</h>
+            <p class="card-text">
+                Ajmer is a city located in the state of Rajasthan, India. It is famous for its historical and religious significance and attracts visitors from all over the world. The city is home to the famous Ajmer Sharif Dargah, which is the tomb of the Sufi saint Khwaja Moinuddin Chishti.Ajmer is LOVE...</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/bharatpur">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/alwar.jfif" class="d-block w-100" alt="...">
+          <div class="card-body text-center">
+            <h>ALWAR</h>
+            <p class="card-text">Alwar is a city located in the northern Indian state of Rajasthan. It is known for its rich history and cultural heritage and is home to several ancient forts, palaces, and temples. The city is surrounded by the Aravalli mountain range and offers stunning natural beauty to visitors.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/jaipur">View</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
